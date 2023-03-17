@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% block title %}
+About Us
+{% endblock title %}
+
+
+
+{% block body %}
+ <h3 class="text-center"><span>About Us</span> </h3>
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+          }
+          
+          footer {
+            background-color: #ddd;
+          }
+          
+          /* Create layout using flexbox */
+          nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+          }
+          
+          nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          nav li {
+            display: inline-block;
+            margin-right: 20px;
+          }
+          
+          header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+          }
+          
+          main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+          }
+          
+          /* Add styles for buttons */
+          button {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #3367d6;
+          }
+          
+          /* Add styles for form elements */
+          label {
+            display: block;
+            margin-bottom: 10px;
+          }
+
+          main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+          }
+          
+          h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+          }
+          
+          p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+          }
+          
+          .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+          
+          .feature {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 30px;
+          }
+          
+          .feature img {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          
+          .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+          }
+          
+          .feature p {
+            font-size: 1.1em;
+            line-height: 1.4;
+          }
+          
+          
+    </style>
+  </head>
+  <body>
+    <!-- <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav> -->
+    <header>
+      <h1>Water Quality Monitoring System</h1>
+      <p>Keep track of your water quality with our advanced monitoring system.</p>
+    </header>
+    <main>
+        <h2>Advanced Monitoring Technologies</h2>
+        <p>Welcome to H2Owebmonitor, a website dedicated to providing accurate and timely water quality predictions. Our mission is to improve public health and protect the environment by providing communities with the tools they need to make informed decisions about water safety.</p>
+        <p>We use the latest technologies to monitor the quality of lake water in real-time. Our system integrates remote sensing, machine learning, and image processing to provide accurate and reliable data.</p>
+        
+        <div class="features">
+          <div class="feature">
+            <!-- <img src="remote-sensing.png" alt="Remote Sensing"> -->
+            <h3>Remote Sensing</h3>
+            <p>Our Remote sensing technology allows us to collect real-time water quality data from satellites This data is analyzed using GEE(Google Earth Engine) to provide accurate, up-to-date information about water quality conditions in your area.</p>
+          </div>
+          
+          <div class="feature">
+            <!-- <img src="machine-learning.png" alt="Machine Learning"> -->
+            <h3>Machine Learning</h3>
+            <p>We use machine learning algorithms to analyze the collected data and identify patterns and trends. This helps us to detect anomalies and predict water quality changes.</p>
+          </div>
+          
+          <div class="feature">
+            <!-- <img src="image-processing.png" alt="Image Processing"> -->
+            <h3>Image Processing</h3>
+            <p>Our system uses advanced image processing techniques to extract useful information from the collected images. This includes identifying algae blooms and other contaminants.</p>
+          </div>
+        </div>
+      </main>
+    <footer>
+        <div>
+            <p>&copy; 2023 H2OWebMonitor [Water Quality Monitoring System]. All rights reserved.</p>
+        </div>
+    </footer>
+  </body>
+</html>
+  
+<!-- {% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+
+</div>
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+<br>
+
+<div class="container mt-3">
+<div class="row">
+
+  {% for p in query %}
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <b><h5 class="card-title">{{p.productname}}</h5></b>
+        <b>Price : {{p.Issue}}</b>
+        <hr>
+        <p class="card-text">{{p.productdesc}}</p>
+        
+ 
+        <p>Owner : {{p.username}}</p>
+        <p>Email : {{p.email}}</p>
+      
+
+        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={{p.email}}" target="_blank" class="btn btn-success ">Report</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+  
+
+</div> -->
+{% endblock body %}
