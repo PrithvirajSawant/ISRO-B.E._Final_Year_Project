@@ -20,7 +20,6 @@ Instructions on how to install the project and any necessary dependencies.
 
 To download XAMPP, click [here](https://www.apachefriends.org/download.html)
 <img src="https://s42013.pcdn.co/wp-content/uploads/2012/08/xampp-logo.png" height=50 width=50>
-[![alt XAMPP](xampp-logo.png)]
 
 
 ## Usage
