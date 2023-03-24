@@ -19,7 +19,7 @@ Instructions on how to install the project and any necessary dependencies.
 #### 4.pip install Flask-SQLAlchemy
 
 To download XAMPP, click [here](https://www.apachefriends.org/download.html)
-<img src="https://s42013.pcdn.co/wp-content/uploads/2012/08/xampp-logo.png" height=30 width=50>
+<img src="https://s42013.pcdn.co/wp-content/uploads/2012/08/xampp-logo.png" height=30 width=50 href="https://www.apachefriends.org/download.html">
 
 
 ## Usage
