@@ -12,6 +12,10 @@ A brief description of what the project does.
 ## Installation
 
 Instructions on how to install the project and any necessary dependencies.
+  i.pip install flask
+  ii.pip install Flask-Login
+  iii.pip install mysqlclient
+  iv.pip install Flask-SQLAlchemy
 
 ## Usage
 
