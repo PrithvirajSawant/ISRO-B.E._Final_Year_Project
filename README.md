@@ -18,6 +18,8 @@ Instructions on how to install the project and any necessary dependencies.
 #### 3.pip install mysqlclient
 #### 4.pip install Flask-SQLAlchemy
 
+To visit our website, click [here](https://www.example.com).
+
 ## Usage
 
 Instructions on how to use the project and any relevant examples.
