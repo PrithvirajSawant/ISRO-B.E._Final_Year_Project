@@ -13,7 +13,7 @@ A brief description of what the project does.
 
 Instructions on how to install the project and any necessary dependencies.
 
-##1.pip install flask
+## pip install flask
   
   ii.pip install Flask-Login
   iii.pip install mysqlclient
