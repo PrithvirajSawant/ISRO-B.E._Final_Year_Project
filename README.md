@@ -28,7 +28,7 @@ Instructions on how to use the project and any relevant examples.
 #### If the usual execution does not work
 ##### 1.Open Cmd of your application
 ##### 2.Nvigate to the directory you have extracted the file [via. cd]
-##### 3.Now execute python main.py command
+##### 3.Now execute the command - python main.py 
 
 ## Contributing
 
