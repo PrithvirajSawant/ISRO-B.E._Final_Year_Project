@@ -18,8 +18,8 @@ Instructions on how to install the project and any necessary dependencies.
 #### 3.pip install mysqlclient
 #### 4.pip install Flask-SQLAlchemy
 
-To visit our website, click [here](https://www.example.com).
-[![alt XAMPP](image.png)](https://s42013.pcdn.co/wp-content/uploads/2012/08/xampp-logo.png)
+To download XAMPP, click [here]
+[![alt XAMPP](xampp-logo.png)](https://www.apachefriends.org/download.html)
 
 
 ## Usage
