@@ -25,6 +25,10 @@ Instructions on how to install the project and any necessary dependencies.
 ## Usage
 
 Instructions on how to use the project and any relevant examples.
+##### If the usual execution does not work
+##### 1.Open Cmd of the of the your app
+##### 2.Nvigate to the directory you have extracted the file [via. cd]
+##### 3.Now execute python main.py command
 
 ## Contributing
 
