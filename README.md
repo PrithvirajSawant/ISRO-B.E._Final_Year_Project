@@ -1,18 +1,27 @@
 # ISRO-B.E._Final_Year_Project
 
-# To run the file:
-1.Download these below modules
-  i.pip install flask
-  ii.pip install Flask-Login
-  iii.pip install mysqlclient
-  iv.pip install Flask-SQLAlchemy
-  
-2.Download XAMPP server
-  <a href="https://www.apachefriends.org/download.html" target=_block></a>
-3.
+A brief description of what the project does.
 
+## Table of Contents
 
-1. 
-2. 
-3. 
-4. 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+Instructions on how to install the project and any necessary dependencies.
+
+## Usage
+
+Instructions on how to use the project and any relevant examples.
+
+## Contributing
+
+Guidelines on how to contribute to the project and any other relevant information.
+
+## License
+
+Information about the license under which the project is distributed.
+
