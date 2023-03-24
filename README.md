@@ -6,8 +6,8 @@ A brief description of what the project does.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+<!-- - [Contributing](#contributing)
+- [License](#license) -->
 
 ## Installation
 
@@ -30,11 +30,19 @@ Instructions on how to use the project and any relevant examples.
 ##### 2.Nvigate to the directory you have extracted the file [via. cd]
 ##### 3.Now execute the command - python main.py 
 
-## Contributing
+### XAMPP
+#### After extraction & installation of the file
+#### 1.Start the 'Apache' & 'MySql'
+#### 2.Click on the 'Admin', you will be redirected to the phpmyadmin server
+
+### To check connectin between Database and Website 
+#### Type /test at the end of locally hosted server [http://127.0.0.1:5000/test]
+
+<!-- ## Contributing
 
 Guidelines on how to contribute to the project and any other relevant information.
 
 ## License
 
-Information about the license under which the project is distributed.
+Information about the license under which the project is distributed. -->
 
