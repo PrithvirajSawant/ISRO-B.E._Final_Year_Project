@@ -36,7 +36,7 @@ Instructions on how to use the project and any relevant examples.
 #### 2.Click on the 'Admin', you will be redirected to the phpmyadmin server
 
 ### To check connectin between Database and Website 
-#### Type /test at the end of locally hosted server [--http://127.0.0.1:5000/test--]
+#### Type /test at the end of locally hosted server [http://127.0.0.1:5000/test]
 
 <!-- ## Contributing
 
