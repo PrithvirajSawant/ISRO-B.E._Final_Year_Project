@@ -19,6 +19,8 @@ Instructions on how to install the project and any necessary dependencies.
 #### 4.pip install Flask-SQLAlchemy
 
 To visit our website, click [here](https://www.example.com).
+[![alt text](image.png)](https://www.example.com)
+
 
 ## Usage
 
