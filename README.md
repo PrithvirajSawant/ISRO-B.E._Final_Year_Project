@@ -5,7 +5,7 @@ A brief description of what the project does.
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- (#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
