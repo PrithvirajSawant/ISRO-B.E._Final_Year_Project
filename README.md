@@ -36,6 +36,10 @@ Instructions on how to use the project and any relevant examples.
 #### 1.Start the 'Apache' & 'MySql'
 #### 2.Click on the 'Admin', you will be redirected to the phpmyadmin server
 
+### Importing database to xampp server
+#### Open xampp server, create new Database with name "h20webmonitor"
+#### Click on import, and choose file to import, in our case "h20webmonitor.sql"
+
 ### To check connectin between Database and Website 
 #### Type /test at the end of locally hosted server [http://127.0.0.1:5000/test]
 
