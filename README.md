@@ -10,7 +10,7 @@ A brief description of what the project does.
 <!-- - [Contributing](#contributing)
 - [License](#license) -->
 
-<mark>## Installation</mark>
+## <mark>Installation</mark>
 
 Instructions on how to install the project and any necessary dependencies.
 #### Download via Cmd
