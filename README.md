@@ -1,4 +1,4 @@
-# ISRO-B.E._Final_Year_Project - Karuna
+# ISRO-B.E._Final_Year_Project 
 
 
 A brief description of what the project does.
