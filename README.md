@@ -10,7 +10,7 @@ A brief description of what the project does.
 <!-- - [Contributing](#contributing)
 - [License](#license) -->
 
-<mark>## Installation</mark>
+## Installation
 
 Instructions on how to install the project and any necessary dependencies.
 #### Download via Cmd
@@ -23,7 +23,7 @@ Instructions on how to install the project and any necessary dependencies.
 <img src="https://s42013.pcdn.co/wp-content/uploads/2012/08/xampp-logo.png" height=30 width=50>
 
 
-<mark>## Usage</mark>
+## Usage
 
 Instructions on how to use the project and any relevant examples.
 #### If the usual execution does not work
@@ -31,16 +31,16 @@ Instructions on how to use the project and any relevant examples.
 ##### 2.Nvigate to the directory you have extracted the file [via. cd]
 ##### 3.Now execute the command - python main.py 
 
-<mark>### XAMPP</mark>
+### XAMPP
 #### After extraction & installation of the file
 #### 1.Start the 'Apache' & 'MySql'
 #### 2.Click on the 'Admin', you will be redirected to the phpmyadmin server
 
-<mark>### Importing database to xampp server</mark>
+### Importing database to xampp server
 #### Open xampp server, create new Database with name "h20webmonitor"
 #### Click on import, and choose file to import, in our case "h20webmonitor.sql"
 
-<mark>### To check connectin between Database and Website</mark>
+### To check connectin between Database and Website
 #### Type /test at the end of locally hosted server [http://127.0.0.1:5000/test]
 
 <!-- ## Contributing
