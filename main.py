@@ -84,7 +84,7 @@ def triggers():
 
 
 @app.route('/Aboutus')
-def About_1():
+def Aboutus():
     # query=db.engine.execute(f"SELECT * FROM `report`") 
     return render_template('Aboutus.html')
 
@@ -92,6 +92,11 @@ def About_1():
 def RemoteSensing():
     # query=db.engine.execute(f"SELECT * FROM `report`") 
     return render_template('RemoteSensing.html')
+
+@app.route('/MachineLearning')
+def MachineLearning():
+    # query=db.engine.execute(f"SELECT * FROM `report`") 
+    return render_template('MachineLearning.html')
 
 @app.route('/Services')
 def Services():
