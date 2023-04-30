@@ -1,11 +1,125 @@
 {% extends 'base.html' %}
 {% block title %}
-Machine Learning
+Onsite ML
 {% endblock title %}
 
 
 
 {% block body %}
- <h3 class="text-center"><span>Machine Learning</span> </h3>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+          }
+          
+          footer {
+            padding:5px;
+            background-color: #ddd;
+            display: table;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          /* Create layout using flexbox */
+          nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+          }
+          
+          nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          nav li {
+            display: inline-block;
+            margin-right: 20px;
+          }
+          
+          
+          /* Add styles for buttons */
+          button {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #3367d6;
+          }
+          
+          /* Add styles for form elements */
+          label {
+            display: block;
+            margin-bottom: 10px;
+          }
+          h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+          }
+          
+          p {
+            padding-top: 5px; 
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+          }
+          
+          .feature p {
+            font-size: 1.1em;
+            line-height: 1.4;
+          }
+        
+        .full-height {
+          height: 100%;
+        }
+
+    </style>
+    
+
+  <!--<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+
+    $(document).ready(function(){
+		 $("#div_refresh").load("http://localhost:8501/");
+        setInterval(function() {
+            $("#div_refresh").load("http://localhost:8501/");
+        }, 3000);
+    });
+
+    function refreshPage(){
+      window.location.reload();
+  } 
+  </script> -->
+
+    <!-- <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav> -->
+
+    <!--<button type="submit" onClick="refreshPage()">Refresh Button</button>-->
+
+    <div >
+    <iframe src="https://phoenixces-mystreamlitapp-streamlit-app-xcbo46.streamlit.app/?embedded=true" width = "100%" height = "800" style="border:none;"></iframe>
+    </div>
+  
+      <footer >
+        <div>
+            <p>&copy; 2023 H2OWebMonitor [Water Quality Monitoring System]. All rights reserved.</p>
+        </div>
+    </footer>
+  
   
 {% endblock body %}
