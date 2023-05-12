@@ -6,84 +6,6 @@ Onsite ML
 
 
 {% block body %}
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #333;
-          }
-          
-          footer {
-            padding:5px;
-            background-color: #ddd;
-            display: table;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-          }
-          
-          /* Create layout using flexbox */
-          nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-          }
-          
-          nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
-          
-          nav li {
-            display: inline-block;
-            margin-right: 20px;
-          }
-          
-          
-          /* Add styles for buttons */
-          button {
-            background-color: #4285f4;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1em;
-            cursor: pointer;
-          }
-          
-          button:hover {
-            background-color: #3367d6;
-          }
-          
-          /* Add styles for form elements */
-          label {
-            display: block;
-            margin-bottom: 10px;
-          }
-          h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-          }
-          
-          p {
-            padding-top: 5px; 
-            font-size: 1.2em;
-            line-height: 1.5;
-            margin-bottom: 30px;
-          }
-          
-          .feature p {
-            font-size: 1.1em;
-            line-height: 1.4;
-          }
-        
-        .full-height {
-          height: 100%;
-        }
-
-    </style>
     
 
   <!--<script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -116,10 +38,23 @@ Onsite ML
     </div>
   
       <footer >
-        <div>
-            <p>&copy; 2023 H2OWebMonitor [Water Quality Monitoring System]. All rights reserved.</p>
-        </div>
+        <footer>
+          <div class="container py-4">
+            <div class="copyright">
+              &copy; Copyright <strong><span>H2OWebMonitor</span></strong>. All Rights Reserved
+            </div>
+            <div class="creditss">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+              Designed by <a href="https://github.com/PrithvirajSawant?tab=overview&from=2023-02-01&to=2023-02-13"><span class="dp">Prithviraj Sawant</span></a>
+            </div>
+          </div>
+          <!-- <div>
+              <p>&copy; 2023 H2OWebMonitor [Water Quality Monitoring System]. All rights reserved.</p>
+          </div> -->
+      </footer>
     </footer>
-  
   
 {% endblock body %}
