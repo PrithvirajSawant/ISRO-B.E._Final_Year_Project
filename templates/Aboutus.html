@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% block title %}
+About Us
+{% endblock title %}
+
+
+
+{% block body %}
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    
+  </head>
+  <body>
+     <!-- ======= About Section ======= -->
+     <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <h3>Find Out More <span>About Us</span></h3>
+          <p>H20 Monitoring</p>
+          <p class="description">Welcome to H2Owebmonitor, a website dedicated to providing accurate and timely water quality predictions. Our mission is to improve public health and protect the environment by providing communities with the tools they need to make informed decisions about water safety</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Advanced Monitoring</a></h4>
+              <p class="description">
+                We use the latest technologies to monitor the quality of lake water in real-time. Our system integrates remote sensing, machine learning, and image processing to provide accurate and reliable data
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Machine Learning</a></h4>
+              <p class="description">We use machine learning algorithms to analyze the collected data and identify patterns and trends. This helps us to detect anomalies and predict water quality changes</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Image Processing</a></h4>
+              <p class="description">Our system uses advanced image processing techniques to extract useful information from the collected images. This includes identifying algae blooms and other contaminants</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Navigation</a></h4>
+              <p class="description">XXXXXXXXXXXXXXX   XXXXXXX</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <footer id="footer">
+        <div class="footer-top">
+         
+        </div>
+    
+        <div class="container">
+       
+          <div class="credits">
+          <br>
+    
+            <a href="https://github.com/PrithvirajSawant?tab=overview&from=2023-02-01&to=2023-02-13"><span style="font-weight:bold;">Designed by PRITHVIRAJ SAWANT</span></a>
+            <br>
+          </div>
+        </div>
+      </footer><!-- End  Footer -->
+
+    </section><!-- About Section -->
+  </body>
+</html>
+  
+<!-- {% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+
+</div>
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+<br>
+
+<div class="container mt-3">
+<div class="row">
+
+  {% for p in query %}
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <b><h5 class="card-title">{{p.productname}}</h5></b>
+        <b>Price : {{p.Issue}}</b>
+        <hr>
+        <p class="card-text">{{p.productdesc}}</p>
+        
+ 
+        <p>Owner : {{p.username}}</p>
+        <p>Email : {{p.email}}</p>
+      
+
+        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={{p.email}}" target="_blank" class="btn btn-success ">Report</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+  
+
+</div> -->
+
+{% endblock body %}
