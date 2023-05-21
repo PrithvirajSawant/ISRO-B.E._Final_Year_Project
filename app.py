@@ -24,7 +24,7 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 # app.config['SQLALCHEMY_DATABASE_URL']='mysql://username:password@localhost/databas__name'
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/h20webmonitor'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost:3307/h20webmonitor'
 db=SQLAlchemy(app)
 
 # here we will create db models that is tables
@@ -100,6 +100,11 @@ def ImageProcessing():
 def MachineLearning():
     # query=db.engine.execute(f"SELECT * FROM `report`") 
     return render_template('MachineLearning.html')
+
+@app.route('/livelocation')
+def livelocation():
+    # query=db.engine.execute(f"SELECT * FROM `report`")
+    return render_template('livelocation.')
 
 @app.route('/Services')
 def Services():
