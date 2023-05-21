@@ -77,12 +77,12 @@ def ReportL():
     return render_template('ReportL.html',query=query)
 
 
-@app.route('/triggers')
-@login_required
-def triggers():
-    # query=db.engine.execute(f"SELECT * FROM `trig`") 
-    query=Trig.query.all()
-    return render_template('triggers.html',query=query)
+# @app.route('/triggers')
+# @login_required
+# def triggers():
+#     # query=db.engine.execute(f"SELECT * FROM `trig`") 
+#     query=Trig.query.all()
+#     return render_template('triggers.html',query=query)
 
 
 
