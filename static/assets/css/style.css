@@ -1713,3 +1713,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 13px;
     color: #ddd;
 }
+
+.ip{
+    background-color: #000;
+}
