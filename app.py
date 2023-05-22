@@ -101,6 +101,11 @@ def MachineLearning():
     # query=db.engine.execute(f"SELECT * FROM `report`") 
     return render_template('MachineLearning.html')
 
+@app.route('/livelocation')
+def livelocation():
+    # query=db.engine.execute(f"SELECT * FROM `report`")
+    return render_template('livelocation.html')
+
 @app.route('/Services')
 def Services():
     # query=db.engine.execute(f"SELECT * FROM `report`") 

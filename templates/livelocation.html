@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% block title %}
+LiveLocation
+{% endblock title %}
+
+
+
+{% block body %}
+<br>
+<br>
+ <h3 class="text-center"><span style="font-size: 1.9 vrem;
+  font-weight: 800; color: #21d093;">Navigation</span> </h3>
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Real-time Location on Map</title>
+
+  <!-- Include Leaflet CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
+  <!-- Include custom CSS -->
+  <style>
+    #map { height: 500px; }
+    body {
+      background-color: #121212;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 50px;
+      font-family: Verdana, Arial, Tahoma, Serif;
+      color: #21d093;
+
+    }
+    p{
+      text-align: center;
+      font-family: Verdana, Arial, Tahoma, Serif;
+      font-weight: 550;
+      color: #424242;
+    }
+    p:hover{
+      color: #fff;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Real-time Location on Map</h1>
+  <p>(Click on the marker to get the address)</p>
+  <!-- Create map container -->
+  <div id="map"></div>
+  <!-- Include Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <!-- Include custom JavaScript -->
+  <script>
+   // Initialize Leaflet map
+   var map = L.map('map').setView([0, 0], 13);
+
+// Add tile layers to map
+var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+var watercolor = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Tiles &copy; <a href="http://stamen.com">Stamen</a>'
+});
+var googleStreet = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+});
+var dark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+  maxZoom: 20,
+  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Tiles &copy; <a href="http://stadiamaps.com">Stadia Maps</a>'
+});
+osm.addTo(map);
+
+// Initialize marker
+var marker = L.marker([0, 0]).addTo(map);
+// Initialize a popup for the marker
+
+var popup = L.popup();
+
+// Define a function to fetch the address for a given latitude and longitude
+function getAddress(lat, lng) {
+var url = 'https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=' + lat + '&lon=' + lng;
+return fetch(url)
+.then(response => response.json())
+.then(data => data.display_name)
+.catch(error => console.log(error));
+}
+
+// When the marker is clicked, fetch the address for the marker location and display it in a popup
+marker.on('click', function() {
+getAddress(marker.getLatLng().lat, marker.getLatLng().lng)
+.then(address => popup.setLatLng(marker.getLatLng()).setContent(address).openOn(map));
+});
+
+
+// Create radio buttons for tile layers
+var baseMaps = {
+    "OpenStreetMap": osm,
+    "Watercolor": watercolor,
+    "Google Street": googleStreet,
+    "Dark": dark
+};
+L.control.layers(baseMaps).addTo(map);
+
+    // Define function to fetch data from Google Sheets API
+    function fetchDataFromGoogleSheets() {
+      var spreadsheetId = '1lOf32JKNggS7cogzifAt--WAkPfwEfHjd6jx-q8-Nb4';
+      var apiKey = 'AIzaSyAUGVfd4H6H8riELHVAc4RTp5m4U7ItxLg';
+      var url = 'https://sheets.googleapis.com/v4/spreadsheets/' + spreadsheetId + '/values/Main!A2:I?key=' + apiKey;
+
+      // Fetch data from Google Sheets API
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          // Get the latest row of data
+          var latestRow = data.values[data.values.length - 1];
+          // Get latitude and longitude values from the row
+          var latitude = parseFloat(latestRow[7]);
+          var longitude = parseFloat(latestRow[8]);
+
+          // Update marker location
+          marker.setLatLng([latitude, longitude]);
+          // Update map view
+          map.setView([latitude, longitude], 13);
+        })
+        .catch(error => console.log('Error fetching data from Google Sheets:', error));
+    }
+
+    // Call the fetchDataFromGoogleSheets function initially
+    fetchDataFromGoogleSheets();
+
+    // Call the fetchDataFromGoogleSheets function every few seconds to update the data
+    setInterval(fetchDataFromGoogleSheets, 5000); // Check every 5 seconds
+
+  </script>
+</body>
+</html>
+
+
+ {% endblock body %} 
+
