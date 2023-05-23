@@ -6,10 +6,10 @@ LiveLocation
 
 
 {% block body %}
-<br>
+<!-- <br>
 <br>
  <h3 class="text-center"><span style="font-size: 1.9 vrem;
-  font-weight: 800; color: #21d093;">Navigation</span> </h3>
+  font-weight: 800; color: #21d093;">Navigation</span> </h3> -->
  
  <!DOCTYPE html>
 <html>
@@ -20,7 +20,7 @@ LiveLocation
   <!-- Include Leaflet CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
   <!-- Include custom CSS -->
-  <style>
+  <!-- <style>
     #map { height: 500px; }
     body {
       background-color: #121212;
@@ -44,12 +44,20 @@ LiveLocation
     p:hover{
       color: #fff;
     }
-  </style>
+  </style> -->
 
 </head>
 <body>
-  <h1>Real-time Location on Map</h1>
-  <p>(Click on the marker to get the address)</p>
+  <!-- <h1>Real-time Location on Map</h1>
+  <p>(Click on the marker to get the address)</p> -->
+  <section id="featured-services" class="featured-services extra">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Navigation</h2>
+        <h3>Click on the marker to get the<span> Location</span></h3>
+        <p>H20 Monitoring</p>
+      </div>
+  </section>
   <!-- Create map container -->
   <div id="map"></div>
   <!-- Include Leaflet JavaScript -->

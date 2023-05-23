@@ -113,6 +113,11 @@ section {
   .featured-services .icon-box:hover .description {
     color: #fff;
   }
+
+  .featured-services .icon-box:hover .title .tru,
+  .featured-services .icon-box:hover .description {
+    color: #fff;
+  }
   
   .featured-services .icon-box:hover .icon i {
     color: #fff;
@@ -149,5 +154,17 @@ section {
   .dp:hover{
     color:#21d093;
   }
+
+  .tru{
+    color: #000;
+  }
+
+  #map { height: 500px; }
+
+  .extra{
+    background-color: #f2efe9;
+  }
+  
+  
 
  
