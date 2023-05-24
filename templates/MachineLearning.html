@@ -6,6 +6,20 @@ Dashboard & Onsite ML
 
 
 {% block body %}
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+
+</div>
+
+
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
     
 
   <!--<script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -33,7 +47,7 @@ Dashboard & Onsite ML
 
     <!--<button type="submit" onClick="refreshPage()">Refresh Button</button>-->
 
-    <div class="ip">
+    <div class="ip" action="ML" method="post">
     <iframe src="https://phoenixces-mystreamlitapp-streamlit-app-xcbo46.streamlit.app/?embedded=true" width = "100%" height = "800" style="border:none;"></iframe>
     </div>
   

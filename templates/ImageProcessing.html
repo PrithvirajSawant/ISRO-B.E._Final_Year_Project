@@ -6,32 +6,20 @@ Image Processing
 
 
 {% block body %}
-    
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
 
-  <!--<script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script>
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
 
-    $(document).ready(function(){
-		 $("#div_refresh").load("http://localhost:8501/");
-        setInterval(function() {
-            $("#div_refresh").load("http://localhost:8501/");
-        }, 3000);
-    });
 
-    function refreshPage(){
-      window.location.reload();
-  } 
-  </script> -->
+</div>
 
-    <!-- <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav> -->
 
-    <!--<button type="submit" onClick="refreshPage()">Refresh Button</button>-->
+{% endfor %}
+{% endif %}
+{% endwith %}
 
     <div class="ip">
     <iframe src="https://phoenixces-image-processing-streamlit-app-g0mtag.streamlit.app/?embedded=true" width = "100%" height = "800" style="border:none;"></iframe>

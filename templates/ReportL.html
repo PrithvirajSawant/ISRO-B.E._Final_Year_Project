@@ -1,12 +1,19 @@
 {% extends 'base.html' %}
 {% block title %}
-ReportL
+Report
 {% endblock title %}
 
 
 
 {% block body %}
- <h3 class="text-center"><span>Report an Issue</span> </h3>
+<section id="featured-services" class="featured-services">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Report</h2>
+      <h3>Report an<span> Issue</span></h3>
+      <p>H20 Monitoring</p>
+    </div>
+</section>
   
 {% with messages=get_flashed_messages(with_categories=true) %}
 {% if messages %}
@@ -30,7 +37,7 @@ ReportL
     <div class="card">
       <div class="card-body">
         <b><h5 class="card-title">{{p.productname}}</h5></b>
-        <b>Price : {{p.Issue}}</b>
+        <b>Issue</b>
         <hr>
         <p class="card-text">{{p.productdesc}}</p>
         
@@ -49,4 +56,14 @@ ReportL
   
 
 </div>
+<footer>
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>H2OWebMonitor</span></strong>. All Rights Reserved
+    </div>
+    <div class="creditss">
+      Designed by <a href="https://github.com/PrithvirajSawant?tab=overview&from=2023-02-01&to=2023-02-13"><span class="dp">Prithviraj Sawant</span></a>
+    </div>
+  </div>
+</footer><!-- End  Footer -->
 {% endblock body %}

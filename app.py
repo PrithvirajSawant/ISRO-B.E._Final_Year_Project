@@ -45,7 +45,7 @@ class report(db.Model):
     pid=db.Column(db.Integer,primary_key=True)
     productname=db.Column(db.String(100))
     productdesc=db.Column(db.String(300))
-    price=db.Column(db.Integer)
+    # price=db.Column(db.Integer)
 
 
 
@@ -71,6 +71,7 @@ def index():
 
 
 @app.route('/ReportL')
+@login_required
 def ReportL():
     # query=db.engine.execute(f"SELECT * FROM `report`") 
     query=report.query.all()
@@ -92,24 +93,22 @@ def Aboutus():
     return render_template('Aboutus.html')
 
 @app.route('/ImageProcessing')
+@login_required
 def ImageProcessing():
     # query=db.engine.execute(f"SELECT * FROM `report`") 
     return render_template('ImageProcessing.html')
 
 @app.route('/MachineLearning')
+@login_required
 def MachineLearning():
     # query=db.engine.execute(f"SELECT * FROM `report`") 
     return render_template('MachineLearning.html')
 
 @app.route('/livelocation')
+@login_required
 def livelocation():
     # query=db.engine.execute(f"SELECT * FROM `report`")
     return render_template('livelocation.html')
-
-@app.route('/Services')
-def Services():
-    # query=db.engine.execute(f"SELECT * FROM `report`") 
-    return render_template('Services.html')
 
 
 @app.route('/signup',methods=['POST','GET'])
@@ -127,7 +126,7 @@ def signup():
         newuser=User(username=username,email=email,password=encpassword)
         db.session.add(newuser)
         db.session.commit()
-        flash("Signup Succes Please Login","success")
+        flash("Signup Succes Please Login","primary")
         return render_template('login.html')
 
           
@@ -143,10 +142,10 @@ def login():
 
         if user and check_password_hash(user.password,password):
             login_user(user)
-            flash("Login Success","primary")
+            flash("Login Success","success")
             return redirect(url_for('index'))
         else:
-            flash("invalid credentials","warning")
+            flash("invalid credentials","danger")
             return render_template('login.html')    
 
     return render_template('login.html')

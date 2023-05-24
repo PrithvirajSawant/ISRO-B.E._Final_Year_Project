@@ -6,10 +6,20 @@ LiveLocation
 
 
 {% block body %}
-<!-- <br>
-<br>
- <h3 class="text-center"><span style="font-size: 1.9 vrem;
-  font-weight: 800; color: #21d093;">Navigation</span> </h3> -->
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+
+</div>
+
+
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
  
  <!DOCTYPE html>
 <html>
