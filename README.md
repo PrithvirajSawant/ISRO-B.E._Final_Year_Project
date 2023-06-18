@@ -13,6 +13,8 @@ A brief description of what the project does.
 ## Installation
 
 Instructions on how to install the project and any necessary dependencies.
+### Download Python, click [here](https://www.python.org/downloads/)
+
 #### Download via Cmd
 #### 1.pip install flask
 #### 2.pip install Flask-Login
