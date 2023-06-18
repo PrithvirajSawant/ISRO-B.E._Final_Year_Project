@@ -16,11 +16,13 @@ Instructions on how to install the project and any necessary dependencies.
 
 ### Download Python, click [here](https://www.python.org/downloads/)
 
-#### Download via Cmd
+
+### Download via Cmd
 #### 1.pip install flask
 #### 2.pip install Flask-Login
 #### 3.pip install mysqlclient
 #### 4.pip install Flask-SQLAlchemy
+
 
 ### To download XAMPP, click [here](https://www.apachefriends.org/download.html)
 <img src="https://s42013.pcdn.co/wp-content/uploads/2012/08/xampp-logo.png" height=30 width=50>
